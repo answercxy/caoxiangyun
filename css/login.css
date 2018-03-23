@@ -1,0 +1,154 @@
+		input:-webkit-autofill , textarea:-webkit-autofill, select:-webkit-autofill {  
+    -webkit-text-fill-color: #ededed !important;  
+    -webkit-box-shadow: 0 0 0px 1000px transparent  inset !important;  
+    background-color:transparent;  
+    background-image: none;  
+     transition: background-color 50000s ease-in-out 0s; //背景色透明  生效时长  过渡效果  启用时延迟的时间  
+}  
+input {  
+     background-color:transparent;  
+}  
+		#canvas{
+			position:absolute;
+			z-index:0;
+			top:0;
+		}
+		#xCanvas{
+			position:absolute; 
+			left:0;
+			top:0; 
+			z-index:100;
+		}
+		body{
+			font-family:微软雅黑;
+			position:absolute;
+			left:0px;
+			top:0px;
+			right:0px;
+			bottom:0px;
+		}
+		.main{
+			text-align:center;
+			z-index:100;
+			position:absolute;
+			width:646px;
+			height:486px;
+			top:50%;
+			left:50%;
+			margin-top:-243px;
+			margin-left:-323px;
+		}
+		.main-title{
+			font-size:5em;
+			color:white;
+		}
+		.small-title{
+			font-size:20px;
+			color:#ffffff;
+			line-height:120px;
+		}
+		.dlinput{
+			line-height:32px;
+			background-color:rgba(255,255,255,0.15);
+			height:34px; 
+			width:446px; 
+			border-radius:5px; 
+			outline:none; 
+			border:solid 1px #2a4f83; 
+			padding-left:45px; 
+			font-size:14px;
+			color:#e7e7e7;
+			margin-top:20px;
+		}
+		.icondiv{
+			position:absolute;
+			left:78px;
+			top:20px;
+			width:45px;
+			height:36px;
+			line-height:34px;
+		}
+		.chooseBox{
+			float:left;
+			box-sizing:border-box;
+			text-align:left; 
+			padding-left:91px;
+			width:320px; 
+			display:inline-block; 
+			color:#dddddd; 
+			font-size:12px;	
+		}
+		.tipInfo{
+			
+		}
+		.form-warning-text,.form-error-text{
+			color:#FE6063;
+			display:inline-block;
+			box-sizing:border-box;text-align:right;padding-right:91px;width:320px; 
+		}
+		.form-succeed-text{
+			color:#2a4f83;
+			display:inline-block;
+			box-sizing:border-box;text-align:right;padding-right:91px;width:320px; 
+		}
+		td{
+			position:relative;
+		}
+		.layui-form-checkbox[lay-skin=primary] i{
+			background-color:rgba(255,255,255,0.15);
+			border-color:#2a4f83;
+			color:transparent;
+		}
+		.layui-form-checked[lay-skin=primary] i{
+			background-color:#2a4f83;
+			color:#ffffff !important;
+		}
+		.layui-form-checkbox[lay-skin=primary] span{
+			color:#a9a9a9;
+			
+		}
+		.layui-form-checkbox[lay-skin=primary]:hover i{
+			border-color:#2a4f83;
+			color:transparent;
+		}
+		input[type="submit"]{
+			line-height:34px;
+			background-color:#00439A;
+			height:36px; width:492px; 
+			border-radius:5px; 
+			outline:none; 
+			border:solid 1px #2a4f83; 
+			font-size:20px; 
+			color:#ffffff; 
+			cursor:pointer; 
+			letter-spacing: 10px;
+		}
+@media only screen and (max-width: 500px){
+	.main{
+		width:90%;
+		margin-left:0px;
+		left:5%;
+	}
+	.icondiv{
+		left:0px;
+	}
+	.dlinput{
+		width:100%;
+		box-sizing:border-box;
+	}
+	.main-title>img{
+		width:100%;
+	}
+	input[type="submit"]{
+		width:100%;
+	}
+	.chooseBox{
+		width:150px;
+		padding-left:0px;
+	}	
+	.form-warning-text,.form-error-text,.form-succeed-text{
+		width:150px;
+		float:right;
+		padding-right:0px;
+	}
+}
