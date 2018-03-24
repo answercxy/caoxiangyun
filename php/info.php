@@ -18,7 +18,9 @@
 		$result=$db->Query($sql,0);
 		while($row=mysqli_fetch_row($result))
 		{
-			$r=Array('id'=>$row[0],'name'=>$row[1],'userId'=>$row[2],'date'=>$row[3],'size'=>$row[4],'showName'=>$row[5]);
+			$sql="select name from caoxiangyun.user where id=".$row[2];
+			$userName=$db->Query($sql,1)[0];
+			$r=Array('id'=>$row[0],'name'=>$row[1],'userId'=>$row[2],'date'=>$row[3],'size'=>$row[4],'showName'=>$row[5],'userName'=>$userName);
 			$rowset[]=$r;
 		}
 		$pO=Array('data' => $rowset)+$pO;

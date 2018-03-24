@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php
 	session_start();
-	if(isset($_SESSION["root"]) && $_SESSION["root"]==127)
+	if(isset($_SESSION["c_root"]) && $_SESSION["c_root"]==127)
 	{	
 		
 ?>
@@ -129,5 +129,7 @@
 	</script>
 </body>
 <?php
+}else{
+	Header("Location: index.php");
 }
 ?>

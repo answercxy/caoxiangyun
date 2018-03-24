@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php
 	session_start();
-	if(isset($_SESSION["root"]))
+	if(isset($_SESSION["c_root"]))
 	{	
 		
 ?>
@@ -37,7 +37,7 @@
           <dd><a id="showUploadBox" href="javascript:void(0)">上传文件</a></dd>
           <?php
           	//曹翔无敌黄金老会员专属服务
-          	if($_SESSION["root"]==127){
+          	if($_SESSION["c_root"]==127){
           		echo '<dd><a href="admin.php">用户管理</a></dd>';
           	}
           ?>
@@ -68,7 +68,7 @@
 			      //,{field: 'id', title: 'ID',  sort: true}
 			      ,{field: 'name', title: '文件名', sort:true}
 			      ,{field: 'showName', title: '显示文件名', sort:true}
-			      ,{field: 'userId', title: '上传用户ID',sort: true}
+			      ,{field: 'userName', title: '上传用户',sort: true}
 			      ,{field: 'size', title: '文件大小', sort:true,templet: function(d){
         			if(d.size==0){
         				return "<1MB";
@@ -123,7 +123,7 @@
 	</script>
 	<script type="text/html" id="barOperating">
 		<a class="layui-btn layui-btn-sm procInstView" lay-event="download"><i class="layui-icon">&#xe601;</i>下载</a>
-		<?php if($_SESSION["root"]==127){ ?>
+		<?php if($_SESSION["c_root"]==127){ ?>
 		<a class="layui-btn layui-btn-sm layui-btn-danger procInstView" lay-event="deleteFile"><i class="layui-icon">&#xe640;</i>删除</a>
 		<?php }?>
 	</script>

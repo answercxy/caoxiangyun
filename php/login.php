@@ -16,7 +16,7 @@
 		if($result_1[0][0]==$password)
 		{
 			session_start();
-			$_SESSION["root"]=$result_3[0][0];
+			$_SESSION["c_root"]=$result_3[0][0];
 			$_SESSION["name"]=$name;	
 			$_SESSION["user_id"]=$result_2[0][0];
 			echo "success";

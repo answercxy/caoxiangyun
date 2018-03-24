@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php
 	session_start();
-	if(isset($_SESSION["root"]))
+	if(isset($_SESSION["c_root"]))
 	{	
 ?>
 <html>
