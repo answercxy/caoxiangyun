@@ -1,6 +1,6 @@
 <?php
 	session_start();
-	if(isset($_SESSION["root"]))
+	if(isset($_SESSION["c_root"]))
 	{
 		//session_destroy();
 		session_unset();//退出登录
