@@ -41,6 +41,7 @@
           		echo '<dd><a href="admin.php">用户管理</a></dd>';
           	}
           ?>
+          <!--<dd><a href="javascript:void(0)">关于曹翔云</a></dd>-->
           <dd><a href="php/exit.php">退出</a></dd>
         </dl>
       </li>
